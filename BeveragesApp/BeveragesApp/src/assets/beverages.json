@@ -1,0 +1,23 @@
+[
+
+    {
+        "BeverageId": "1",
+        "BeverageName": "Sparkling Cranberry Punch"
+    },
+    {
+        "BeverageId": "2",
+        "BeverageName": "Iced Chocolate Delight"
+    },
+    {
+        "BeverageId": "3",
+        "BeverageName": "Raspberry Fizz"
+    },
+    {
+        "BeverageId": "4",
+        "BeverageName": "Virgin Frozen Margarita"
+    },
+    {
+        "BeverageId": "5",
+        "BeverageName": "Summer Punch"
+    }
+]

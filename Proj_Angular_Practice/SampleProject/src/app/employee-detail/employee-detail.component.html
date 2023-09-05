@@ -1,0 +1,29 @@
+<h4>dependency injection using service</h4>
+
+<div class="container">
+    <h3>EMPLOYEE DETAIL COMPONENT</h3>
+    <div class="table-responsive">
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Employee Name</th>
+                    <th>Employee Location</th>
+                    <th>Employee Domain</th>
+                    <th>Employee Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let employee of employees">
+                    <td>{{employee.employeeID}}</td>
+                    <td>{{employee.employeeName}}</td>
+                    <td>{{employee.employeeLocation}}</td>
+                    <td>{{employee.employeeDomain}}</td>
+                    <td>{{employee.employeeExperience}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<app-employee-list></app-employee-list>

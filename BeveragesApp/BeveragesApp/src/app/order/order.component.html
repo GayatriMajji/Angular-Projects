@@ -1,0 +1,20 @@
+<div class="container">
+    <h3>ORDER YOUR BEVERAGE</h3> <br>
+    <form [formGroup]="orderForm" (ngSubmit)="addCustomerOrder()">
+        <div>
+            <input type="text" class="form-control" formControlName="CustomerName" [required]="true"
+                placeholder="Enter customer name here..">
+        </div><br>
+        <div>
+            <select class="form-control" formControlName="BeverageName" placeholder="Select Beverage">
+                <option value='' disabled>-Select Beverage-</option>
+                <option [ngValue]="beverage.BeverageName" *ngFor="let beverage of beverages">{{beverage.BeverageName}}
+                </option>
+            </select>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary" id="btn" [disabled]="!orderForm.value.BeverageName || !orderForm.value.CustomerName">PLACE ORDER</button>
+        </div>
+
+    </form>
+</div>

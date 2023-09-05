@@ -1,0 +1,19 @@
+<br>
+<div class="row">
+    <div class="col-4 panel">
+        <div class="title">
+            <h5>BEVERAGE MENU</h5>
+        </div>
+        <div class="container-fluid">
+            <ul *ngFor="let beverage of beverages">
+                <li>{{beverage.BeverageName}}</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-4">
+        <div class="container-fluid">
+            <app-order></app-order>
+        </div>
+    </div>
+</div>

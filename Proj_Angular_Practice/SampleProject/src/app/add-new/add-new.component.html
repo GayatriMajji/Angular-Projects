@@ -1,0 +1,15 @@
+<h3>ADD NEW COMPONENT</h3>
+
+<div class="container">
+    <h4>sending data from parent component</h4>
+    <input type="text" class="form-control" placeholder="product name" 
+        id="productName" #newName>    <br>
+
+    <input type="number" class="form-control" placeholder="product price" 
+        id="productPrice" #newPrice>    <br>
+
+    <button type="button" (click)="addNewProductEvent(newPrice.value)">Add Product</button> <br><br>
+</div>
+
+<app-product [addNewProduct]="childData"></app-product>
+

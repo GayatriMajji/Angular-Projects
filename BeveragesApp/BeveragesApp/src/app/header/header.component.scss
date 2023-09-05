@@ -1,0 +1,27 @@
+li a{
+    display: block;
+    padding: 15px;
+    color: whitesmoke;
+}
+
+a{
+    color: rgb(100, 145, 31);
+    text-decoration: none;
+}
+
+li {
+    float: left;
+    height: 30px;
+    align-content: center;
+}
+
+ul {
+    list-style-type: none;
+    background-color: #adff2f;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 70px;
+}
+
+

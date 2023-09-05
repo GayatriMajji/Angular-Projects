@@ -1,0 +1,19 @@
+<div class="container">
+    <h3>EMPLOYEE LIST COMPONENT</h3>
+    <div class="table-responsive">
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Employee Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let employee of employees">
+                    <td>{{employee.employeeID}}</td>
+                    <td>{{employee.employeeName}}</td>
+                </tr> 
+            </tbody>
+        </table>
+    </div>
+</div>

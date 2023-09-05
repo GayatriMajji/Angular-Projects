@@ -1,0 +1,71 @@
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="container orderStage">
+                <div class="title">
+                    <h4>IN QUEUE</h4>
+                </div>
+                <div class="orderContainer">
+                    <ul *ngFor="let order of Orders" class="orderDetails">
+                        <div class="orderDiv" *ngIf="order.StageId == 1">
+                            <li *ngIf="order">
+                                <div class="beverageName">{{order.BeverageName}}</div>
+                                <div class="customerName">Customer Name: {{order.CustomerName}}</div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-light"
+                                        (click)="changeStage(order.OrderId, order.StageId, CanRemoveOrder)">Cancel Order</button>
+                                    <button type="button" class="btn btn-outline-light"
+                                        (click)="changeStage(order.OrderId, order.StageId, InMakingId)">Take Order</button>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="container orderStage">
+                <div class="title">
+                    <h4>IN MAKING</h4>
+                </div>
+                <div class="orderContainer">
+                    <ul *ngFor="let order of Orders" class="orderDetails">
+                        <div class="orderDiv"*ngIf="order.StageId == 2">
+                            <li *ngIf="order">
+                                <div class="beverageName">{{order.BeverageName}}</div>
+                                <div class="customerName">Customer Name: {{order.CustomerName}}</div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-light"
+                                        (click)="changeStage(order.OrderId, order.StageId, InQueueId)">Move to Queue</button>
+                                    <button type="button" class="btn btn-outline-light"
+                                        (click)="changeStage(order.OrderId, order.StageId, InReadyToCollectId)">Done</button>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="container orderStage">
+                <div class="title">
+                    <h4>READY TO COLLECT</h4>
+                </div>
+                <div class="orderContainer">
+                    <ul *ngFor="let order of Orders" class="orderDetails">
+                        <div class="orderDiv" *ngIf="order.StageId == 3">
+                            <li *ngIf="order">
+                                <div class="beverageName">{{order.BeverageName}}</div>
+                                <div class="customerName">Customer Name: {{order.CustomerName}}</div>
+                                <button class="btn btn-outline-light" id="btn"
+                                    (click)="changeStage(order.OrderId, order.StageId, CanRemoveOrder)">Order
+                                    Collected</button>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

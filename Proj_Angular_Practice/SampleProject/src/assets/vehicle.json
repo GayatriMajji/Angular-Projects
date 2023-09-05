@@ -1,0 +1,17 @@
+   [
+        {
+            "vehicleName": "suzuki",
+            "vehiclePrice":"1200000"
+        },
+
+        {
+            "vehicleName":"benze",
+            "vehiclePrice":"1500000"
+        },
+
+        {
+            "vehicleName":"skoda",
+            "vehiclePrice":"1700000"
+        }
+
+    ]

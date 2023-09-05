@@ -1,0 +1,22 @@
+<h3>PRODUCT COMPONENT</h3>
+
+<div class="container">
+    <h4>data in child component</h4>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products;">
+                    <td>{{product.productName}}</td>
+                    <td>{{product.productPrice}}</td>
+                </tr>
+            </tbody>
+            <p>{{addNewProduct}}</p>
+        </table>
+    </div>
+</div>

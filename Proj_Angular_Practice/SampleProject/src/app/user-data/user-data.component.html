@@ -1,0 +1,33 @@
+<h3>Forms Module</h3>
+<div class="container">
+  <form #signup="ngForm" (ngSubmit)="submit(signup.value)">
+
+    <div class="form-outline mb-4">
+      <input type="text" id="form3Example1cg" class="form-control form-control-lg" name="FirstName" ngModel />
+      <label class="form-label" for="form3Example1cg">First Name</label>
+    </div>
+
+    <div class="form-outline mb-4">
+      <input type="text" id="form3Example3cg" class="form-control form-control-lg" name="LastName" ngModel />
+      <label class="form-label" for="form3Example3cg">Last Name</label>
+    </div>
+
+    <div class="form-outline mb-4">
+      <input type="email" id="form3Example4cg" class="form-control form-control-lg" name="EmailAddress" ngModel />
+      <label class="form-label" for="form3Example4cg">Email ID</label>
+    </div>
+
+    <div class="form-outline mb-4">
+      <input type="text" id="form3Example4cdg" class="form-control form-control-lg" name="Department" ngModel />
+      <label class="form-label" for="form3Example4cdg">Password</label>
+    </div>
+
+    <div class="d-flex justify-content-center">
+      <button type="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Submit</button>
+    </div>
+
+    <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!" class="fw-bold text-body"><u>Login
+          here</u></a></p>
+
+  </form>
+</div>
